@@ -6,7 +6,7 @@
 /*   By: rbourkai <rbourkai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 15:29:12 by rbourkai          #+#    #+#             */
-/*   Updated: 2024/11/21 16:00:00 by rbourkai         ###   ########.fr       */
+/*   Updated: 2026/02/18 13:03:16 by rbourkai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	if (fd >= 0)
+	if (fd >= 0 && s)
 	{
 		ft_putstr_fd(s, fd);
 		ft_putchar_fd('\n', fd);

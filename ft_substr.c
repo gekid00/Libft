@@ -18,14 +18,14 @@ char	*ft_substr(char const *str, unsigned int start, size_t size)
 	size_t	len;
 	char	*result;
 
+	if (!str)
+		return (NULL);
 	len = ft_strlen(str);
 	if (start >= len)
 		return (ft_strdup(""));
 	if (size > len - start)
 		size = len - start;
-	if (!str)
-		return (NULL);
-	result = malloc(size * (sizeof (char)) + 1);
+	result = malloc(size * (sizeof(char)) + 1);
 	if (!result)
 		return (NULL);
 	count = 0;

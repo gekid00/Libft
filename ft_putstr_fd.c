@@ -6,7 +6,7 @@
 /*   By: rbourkai <rbourkai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 14:48:15 by rbourkai          #+#    #+#             */
-/*   Updated: 2024/11/21 16:00:08 by rbourkai         ###   ########.fr       */
+/*   Updated: 2026/02/18 13:02:50 by rbourkai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,9 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	i;
 
-	if (fd >= 0)
+	if (fd >= 0 && s)
 	{
 		i = 0;
-		if ((!s) || (fd == 0))
-			return ;
 		while (s[i])
 		{
 			ft_putchar_fd(s[i], fd);

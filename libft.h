@@ -6,7 +6,7 @@
 /*   By: rbourkai <rbourkai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 14:42:38 by rbourkai          #+#    #+#             */
-/*   Updated: 2024/11/25 15:52:09 by rbourkai         ###   ########.fr       */
+/*   Updated: 2026/02/18 13:03:02 by rbourkai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 int		ft_atoi(const char *str);
 
-void	*ft_bzero(void *pointer, size_t size);
+void	ft_bzero(void *pointer, size_t size);
 void	*ft_memset(void *pointer, int c, size_t size);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);

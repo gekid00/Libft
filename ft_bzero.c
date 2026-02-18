@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	*ft_bzero(void *pointer, size_t size)
+void	ft_bzero(void *pointer, size_t size)
 {
 	size_t			x;
 	unsigned char	*ptr;
@@ -25,5 +25,4 @@ void	*ft_bzero(void *pointer, size_t size)
 		x++;
 		ptr++;
 	}
-	return (pointer);
 }

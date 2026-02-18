@@ -6,7 +6,7 @@
 /*   By: rbourkai <rbourkai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 13:48:20 by rbourkai          #+#    #+#             */
-/*   Updated: 2024/11/21 14:23:18 by rbourkai         ###   ########.fr       */
+/*   Updated: 2026/02/18 13:03:18 by rbourkai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*result;
 
 	i = 0;
-	if (!s)
+	if (!s || !f)
 		return (NULL);
 	len = ft_strlen(s);
 	result = malloc((len + 1) * sizeof(char));
